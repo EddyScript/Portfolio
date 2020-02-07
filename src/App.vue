@@ -91,7 +91,7 @@
          
       </div>
 
-      <div class="mx-12 mt-6 mb-12">
+      <div class=" mt-6 mb-12">
 
        <v-card
         class="mx-auto"

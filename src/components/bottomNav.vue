@@ -2,47 +2,31 @@
     <!-- footer -->
         
   <v-footer
-      padless
-      width="auto"
+    color="primary lighten-1"
+    padless
+  >
+    <v-row
+      justify="center"
+      no-gutters
     >
-      <v-card
-        class="flex"
-        flat
-        tile
-        width="auto"
+      <v-btn
+        v-for="link in links"
+        :key="link"
+        color="white"
+        text
+        rounded
+        class="my-2"
       >
-        <v-card-title 
-        class="orange lighten-1" 
-        >
-
-            <div class="mx-auto">
-
-              <v-btn icon class="px-8">
-                <v-icon v-on:click= "twitter">mdi-twitter</v-icon>
-              </v-btn>
-
-              <v-btn icon class="px-8">
-                <v-icon v-on:click= "github">mdi-github-circle</v-icon>
-              </v-btn>
-
-              <v-btn icon class="px-8">
-                <v-icon v-on:click = "linkedin">mdi-linkedin-box</v-icon>
-              </v-btn>
-              
-            </div>
-
-        </v-card-title>
-
-        <v-card-text class="py-2 white--text text-center orange lighten-1">
-
-          {{ new Date().getFullYear() }} — <strong>Eddy's Portfolio</strong>
-
-        </v-card-text>
-
-      </v-card>
-
+        {{ link }}
+      </v-btn>
+      <v-col
+        class="primary lighten-2 py-4 text-center white--text"
+        cols="12"
+      >
+        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+      </v-col>
+    </v-row>
   </v-footer>
-
 </template>
 
 <script>
