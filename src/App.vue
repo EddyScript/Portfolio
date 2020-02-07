@@ -13,7 +13,7 @@
        <div id="eddyAbout" >
 
           <v-row justify="space-around">
-            <v-avatar size="100" >
+            <v-avatar size="200" >
               <img src="../public/IMG_20200101_002443.jpg">
             </v-avatar>
           </v-row>
