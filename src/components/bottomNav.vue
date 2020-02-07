@@ -1,32 +1,36 @@
 <template>
-    <!-- footer -->
-        
-  <v-footer
-    color="primary lighten-1"
-    padless
-  >
-    <v-row
-      justify="center"
-      no-gutters
+  <!-- footer -->
+
+    <v-footer
+      color="orange lighten-2"
+      padless
     >
-      <v-btn
-        v-for="link in links"
-        :key="link"
-        color="white"
-        text
-        rounded
-        class="my-2"
+      <v-row
+        justify="center"
+        no-gutters
       >
-        {{ link }}
-      </v-btn>
+
+          <v-btn icon class="px-8" color="black">
+            <v-icon v-on:click= "twitter">mdi-twitter</v-icon>
+          </v-btn>
+
+          <v-btn icon class="px-8" color="black">
+            <v-icon v-on:click= "github">mdi-github-circle</v-icon>
+          </v-btn>
+
+          <v-btn icon class="px-8" color="black">
+            <v-icon v-on:click = "linkedin">mdi-linkedin-box</v-icon>
+          </v-btn>
+
       <v-col
-        class="primary lighten-2 py-4 text-center white--text"
+        class="orange lighten-3 py-4 text-center dark--text"
         cols="12"
       >
-        {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
-      </v-col>
-    </v-row>
-  </v-footer>
+          {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+        </v-col>
+      </v-row>
+    </v-footer>
+
 </template>
 
 <script>
