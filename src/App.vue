@@ -67,7 +67,7 @@
        </div>
       
       <!-- Projects -->
-      <div class="mx-12">
+      <!-- <div class="mx-12">
 
        <v-card
         class="mx-auto"
@@ -89,7 +89,7 @@
 
         </v-card>
          
-      </div>
+      </div> -->
 
       <div class=" mt-6 mb-12">
 
